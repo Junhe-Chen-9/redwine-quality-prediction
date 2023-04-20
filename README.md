@@ -1,1 +1,1 @@
-# redwine-quality-prediction
+# Redwine Quality Prediction
