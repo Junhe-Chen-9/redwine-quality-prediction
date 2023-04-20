@@ -1,6 +1,6 @@
 # Redwine Quality Prediction #
 
-## Dataset in the repository is taken from UCI Machine Learning ##
+### Dataset in the repository is taken from UCI Machine Learning ###
 - [Red Wine Quality](https://www.kaggle.com/datasets/uciml/red-wine-quality-cortez-et-al-2009)
 
 ### Description ###
