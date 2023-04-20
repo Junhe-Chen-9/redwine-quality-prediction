@@ -16,3 +16,10 @@ of true positives and true negatives divided by the sum of positives and negativ
 - ***Recall:*** Recall is the percentage of tuples output as negative that are actually negative. It is the number of true positives divided by the sum of the true positives and false negatives. In other words is it the number of true positives divided by the positive tuples. Another word for recall is sensitivity.
 - ***Specificity:*** Specificity is the true negative rate. In other words it is the proportion of negative tuples that the model identified correctly.
 - ***Elbow Method:*** The elbow method will provide better insight on what value to choose for K in K means cluster analysis
+
+### Experimental Setup ###
+***Software :*** we hosted our jupyter notebook as an anaconda docker container on a virtual machine behind a reverse proxy so it can be accessed over web browser with a password, but essentially our source code can be run on any jupyter notebook instances.
+***Hardware :*** The virtual machine is running on a Proxmox virtual environment configured to have 8 vCPUs (physical CPU is ryzen 7700X) and 8GiB of DDR5 RAM, to provide fast computation.
+
+### Results ###
+SVC model built upon only strong corrolation features performs best with accuracy of 96 percent whiele combined precision of 0.97, recall of 0.96 f1-score of 0.96. It had a high accuracy, high recall, high specificity. While random forest with strong corrolation features model perfomrs too well suspected it is overfited.
