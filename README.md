@@ -11,6 +11,13 @@ Quality wine is important as world's wine consumption is over 1.1 billion gallon
 
 ***corrolation:*** In the dataset the residual sugar is not interested because its corrolation to our target quality is so low that it barely affect our model. 
 
+### Main Ideas ###
+
+**Machine Learning:** is a collection of tools and techniques that transforms data into decisions by making ***Classifications*** or ***Regression***.
+
+**Classifications:** Classification is used to classify wine into different quality grade, in this case, this is a ***multiclass*** classification problem. 
+
+
 ### Models ###
 **LogisticRegression:** 
 **GaussianNB(Naive Bayes):** 
