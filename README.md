@@ -27,6 +27,7 @@ Quality wine is important as world's wine consumption is over 1.1 billion gallon
 
 ### Model Evaluation ###
 
+**Cross Validation:** Because the only way to determine if a machine learning method has been ***Overfit*** to the Training Data is to try it on new data that it hasn't seen before. ***Cross Validation*** solves the problem of not knowing which points are the best for Testing by using them all in an iterative way. The first step is to randomly assign the data to different groups. When we divides the data into k group we would have to do k iterations, which ensures that each group is used for ***testing*** this is called ***k-Fold Cross Validation***. In this project, random forest model with strong corrolation features only model is seen to have accuracy of almost 100 percent that suggest that this model might be ***Overfit*** to the data set, that is why ***Cross Validation*** is introduced to ensure our model is working but not overfitted.
 
 ### Experimental Setup ###
 ***Software :*** we hosted our jupyter notebook as an anaconda docker container on a virtual machine behind a reverse proxy so it can be accessed over web browser with a password, but essentially our source code can be run on any jupyter notebook instances.
