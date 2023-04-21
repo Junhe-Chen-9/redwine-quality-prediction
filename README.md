@@ -19,7 +19,7 @@ Quality wine is important as world's wine consumption is over 1.1 billion gallon
 
 
 ### Models ###
-- **LogisticRegression:** 
+- **LogisticRegression:** Linear Regression and Linear Models are great when we want to predict somthing that is ***continuous*** and Logistic Regression comes to be very good at classify discrete variables. However, Logistic Regression is not very good with multi class classification, even we made ***multi_class='multinomial'*** Logistic Regression model is performing poorly as we would expected. 
 - **GaussianNB(Naive Bayes):** 
 - **RandomForestRegressor:** 
 - **SVC:** 
