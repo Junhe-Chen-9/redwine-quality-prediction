@@ -29,9 +29,15 @@ Quality wine is important as world's wine consumption is over 1.1 billion gallon
 
 - **Cross Validation:** Because the only way to determine if a machine learning method has been ***Overfit*** to the Training Data is to try it on new data that it hasn't seen before. ***Cross Validation*** solves the problem of not knowing which points are the best for Testing by using them all in an iterative way. The first step is to randomly assign the data to different groups. When we divides the data into k group we would have to do k iterations, which ensures that each group is used for ***testing*** this is called ***k-Fold Cross Validation***. In this project, random forest model with strong corrolation features only model is seen to have accuracy of almost 100 percent that suggest that this model might be ***Overfit*** to the data set, that is why ***Cross Validation*** is introduced to ensure our model is working but not overfitted. ****3-fold cross validation is added into randomizedsearchCV when tuning hyperparameters on models****
 
+- ***Precision:*** Precision = TP / (TP + FP). Precision measures how many correct postive result against all postive result. I another word Precision represents the accuracy of positive predictions made by the model, and it is a measure of how often the model correctly identifies positive examples among all the examples it has predicted as positive.
+
+- ***Recall:*** Recall = TP / (TP + FN). Recall measures the proportion of correctly predicted positive examples out of all the actual positive examples in the dataset. In other words, recall represents the ability of the model to correctly identify positive examples out of all the actual positive examples in the dataset. It is a measure of how well the model can detect positive examples, and it is particularly useful in scenarios where the cost of false negatives is high, such as in medical diagnosis or security systems, where a false negative could lead to serious consequences.
+
+- ***f1-score:*** F1-score = 2 * ((precision * recall) / (precision + recall)). Measure of the overall accuracy of the model, taking into account both false positives and false negatives.
+
 ### Experimental Setup ###
 - ***Software :*** we hosted our jupyter notebook as an anaconda docker container on a virtual machine behind a reverse proxy so it can be accessed over web browser with a password, but essentially our source code can be run on any jupyter notebook instances.
 - ***Hardware :*** The virtual machine is running on a Proxmox virtual environment configured to have 8 vCPUs (physical CPU is ryzen 7700X) and 8GiB of DDR5 RAM, to provide fast computation.
 
 ### Results ###
-SVC model built upon only strong corrolation features performs best with accuracy of 96 percent whiele combined precision of 0.97, recall of 0.96 f1-score of 0.96. It had a high accuracy, high recall, high specificity. While random forest with strong corrolation features model perfomrs too well suspected it is overfited.
+SVC model built upon only strong corrolation features performs best with accuracy of 96 percent while combined precision of 0.97, recall of 0.96 f1-score of 0.96. It had a high accuracy, high recall, high specificity. While random forest with strong corrolation features model perfomrs too well suspected it is overfited.
